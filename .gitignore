@@ -1,1 +1,3 @@
-##ignore files####
+###ignore files, Don't upload credentials to github!!####
+*Credentials.js
+node_modules/
