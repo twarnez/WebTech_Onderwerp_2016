@@ -1,0 +1,29 @@
+{
+  "name": "robot_control_webapplication",
+  "version": "1.0.0",
+  "description": "Robot control webapplication",
+  "main": "projectStart.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/twarnez/WebTech_Onderwerp_2016.git"
+  },
+  "author": "Thomas Warnez, Carl Goegebeur",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/twarnez/WebTech_Onderwerp_2016/issues"
+  },
+  "homepage": "https://github.com/twarnez/WebTech_Onderwerp_2016#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.14.1",
+    "express3-handlebars": "^0.5.2",
+    "formidable": "^1.0.17",
+    "mv": "^2.1.1"
+  }
+}
