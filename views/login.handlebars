@@ -1,0 +1,38 @@
+<style>
+body {
+
+    background-repeat: no-repeat;
+    text-align: center;
+    table-layout: auto;
+    background-color: white;
+    background-position: top;
+    background-size: 900px  800px;
+
+
+}
+
+h1 {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  align-content: center;
+  color: black;
+  width: 900px;
+}
+
+</style>
+
+  <h1>Login</h1>
+  <form action="process?form=login" method="post">
+    <input type="hidden" name="_csrf" value="{{csrf}}">
+    <label>Name</label>
+    <input type="text" id="fieldName" name="name" value="{{cookieName}}">
+    <label>E-mail</label>
+    <input type="text" id="fieldemail" name="email" value="{{cookieEmail}}">
+    <label>pasword</label>
+    <input type="text" id="fieldpasword" name="pasword" value="{{cookiepasword}}">
+    <button type="submit">login</button>
+    </form>
+<FORM margin-top=30px ><INPUT Type="button" VALUE="Back" onClick="history.go(-1);return true;"></FORM>

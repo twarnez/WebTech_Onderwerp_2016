@@ -1,6 +1,6 @@
 <style>
 body {
-    background-image: url('img/mbed.png');
+    background-image: url('img/white.png');
     background-repeat: no-repeat;
     text-align: center;
     table-layout: auto;
@@ -38,12 +38,13 @@ margin-right: auto;
 margin-left: auto;
 background-color: grey;
 background-size: 900px 20px;
+margin-bottom: 30px;
 
 }
 
 </style>
 
-  <h1>Homepage of mbed control website</h1>
+  <h1>Look a pretty picture</h1>
   <table border="1" id=table>
       <tr>
         <td><a href="home">Home</a></td>
@@ -54,5 +55,13 @@ background-size: 900px 20px;
         <td><a href="login">Login</a></td>
       </tr>
     </table>
-    <h2>Collaborators</h2>
-    <p>{{> info}}</p>
+
+<form enctype="multipart/form-data" action="/upload/{year}/{month}" method="post">
+      <label>Name</label>
+      <input type="text" id="fieldName" name="name">
+      <label>E-mail</label>
+      <input type="text" id="fieldemail" name="email">
+      <label>Photo</label>
+      <input type ="file" accept="image/jpeg" id="fieldPhoto" name="photo">
+      <button type="submit">Submit</button>
+      </form>

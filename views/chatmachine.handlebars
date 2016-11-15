@@ -1,6 +1,6 @@
 <style>
 body {
-    background-image: url('img/mbed.png');
+    background-image: url('img/white.png');
     background-repeat: no-repeat;
     text-align: center;
     table-layout: auto;
@@ -43,7 +43,7 @@ background-size: 900px 20px;
 
 </style>
 
-  <h1>Homepage of mbed control website</h1>
+  <h1>A chat machine</h1>
   <table border="1" id=table>
       <tr>
         <td><a href="home">Home</a></td>
@@ -54,5 +54,14 @@ background-size: 900px 20px;
         <td><a href="login">Login</a></td>
       </tr>
     </table>
-    <h2>Collaborators</h2>
-    <p>{{> info}}</p>
+
+
+    <form action="chatmachine?form=chatmachine" method="post">
+          <input type="hidden" name="_csrf" value="{{csrf}}">
+          <label>Command</label>
+          <input type="text" id="fieldcommand" name="command" value="{{cookieCommand}}">
+          <button type="submit">Submit</button>
+    </form>
+
+    <h3>Command history</h3>
+    <p>{{>command}}</p>
